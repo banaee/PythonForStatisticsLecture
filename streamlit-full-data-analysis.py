@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import seaborn as sns
-import plotly.express as px
+from sklearn.datasets import load_iris, load_wine, load_diabetes
 from scipy.stats import ttest_ind, chi2_contingency
 from scipy import stats
-import numpy as np
+import plotly.express as px
 
-# import pandas_profiling
-# from streamlit_pandas_profiling import st_profile_report
 
 # Set page configuration to widen the layout
 # st.set_page_config(layout="wide")
@@ -16,10 +15,6 @@ import numpy as np
 # ################################################################3
 # Available datasets as Pandas dataframes
 # ################################################################3
-
-
-from sklearn.datasets import load_iris, load_wine, load_diabetes
-import seaborn as sns
 
 @st.cache_data
 def load_sklearn_df(loaded_dataset, target_col_name, target_num=True):
