@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import seaborn as sns
-from sklearn.datasets import load_iris, load_wine, load_diabetes
 from scipy.stats import ttest_ind, chi2_contingency
 from scipy import stats
 import plotly.express as px
+# from sklearn.datasets import load_iris, load_wine, load_diabetes
 
 
 # Set page configuration to widen the layout
@@ -36,7 +36,7 @@ def load_sns_df(dataset_name, target_col_name, cut_columns=None, bins=2):
 
 
 # iris_df = load_sklearn_df(load_iris(), 'class')
-wine_df = load_sklearn_df(load_wine(), 'class')
+# wine_df = load_sklearn_df(load_wine(), 'class')
 # diabetes_df = load_sklearn_df(load_diabetes(), 'class')
 penguins_df = load_sns_df('penguins', 'species')
 diamonds_df = load_sns_df('diamonds', 'price', ['low', 'medium', 'high'], bins=3)
@@ -53,7 +53,6 @@ available_datasets = {
     'Iris Dataset': iris_df,
     'Penguins Dataset': penguins_df,
     'Diamonds Dataset': diamonds_df,
-    'Wine Dataset': wine_df,
     'Titanic Dataset': titanic_df,
     'Flights Dataset': flights_df,
     'Diamonds Dataset': diamonds_df,
@@ -61,6 +60,7 @@ available_datasets = {
     'Car Crashes Dataset': car_crashes_df,
     'Tips Dataset': tips_df,
     # 'Diabetes Dataset': diabetes_df,
+    # 'Wine Dataset': wine_df,
 }
 
 
