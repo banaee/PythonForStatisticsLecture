@@ -13,3 +13,10 @@ To run the Streamlit app, follow these steps:
 ## Details:
 
 Feel free to explore each script to understand the code's functionalities and how they contribute to the project.
+
+
+### Links:
+
+- This repo: https://github.com/banaee/PythonForStatisticsLecture 
+- Get Started with Streamlit: https://streamlit.io/#install
+- Streamlit documentation: https://docs.streamlit.io/ 
