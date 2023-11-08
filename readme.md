@@ -1,4 +1,4 @@
-# Project Name
+# Streamlit for Statistical Analysis
 
 This project includes multiple Python scripts for data analysis and a Streamlit app for visualization.
 
